@@ -20,7 +20,7 @@ const SCategory = () => {
 				{NavMenu.map((i) => (
 					<button className="group">
 						<nav className="my-3 flex items-center">
-							<nav className="w-9 h-9 bg-gray-800 grid place-items-center rounded-xl text-lg text-white text-opacity-40 group-hover:bg-blue-500 group-hover:text-white transition">
+							<nav className="w-9 h-9 bg-gray-800 grid place-items-center rounded-xl text-lg text-white text-opacity-40 group-hover:bg-yellow-300 group-hover:text-white transition">
 								{i.icon}
 							</nav>
 							<nav className="mx-3 text-gray-500 font-bold group-hover:text-white transition">
