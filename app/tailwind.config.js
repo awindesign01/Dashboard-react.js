@@ -6,11 +6,19 @@ module.exports = {
 			width: {
 				"55%": "55%",
 				"45%": "45%",
+				"90%": "90%",
+			},
+			height: {
+				"43rem": "43rem",
+				"96rem": "96rem",
 			},
 		},
 	},
 	variants: {
-		extend: {},
+		extend: {
+			divideColor: ['group-hover'],
+			transitionProperty: ['hover', 'focus'],
+		},
 	},
 	plugins: [],
 };
