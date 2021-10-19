@@ -13,7 +13,7 @@ const SMain = () => {
 					</nav>
 					<nav className="ml-3 text-white">
 						<p className="font-bold tracking-wide">thomas Hope</p>
-						<p className="text-sm">5.3K views - 2 weeks ago</p>
+						<p className="text-sm">115.3K views - 13 weeks ago</p>
 					</nav>
 				</nav>
 			</nav>
