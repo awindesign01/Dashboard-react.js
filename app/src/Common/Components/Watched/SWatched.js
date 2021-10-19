@@ -9,24 +9,28 @@ import userImage6 from "../../../Assets/image/userImage/60.jpg";
 
 const CartItem = [
 	{
+		id: 1,
 		bgImage: Image1,
 		name: "Awin Design",
 		content: "53.1K views - 2 weeks ago",
 		userImage: userImage3,
 	},
 	{
+		id: 2,
 		bgImage: Image2,
 		name: "Awin Design",
 		content: "27.8K views - 3 weeks ago",
 		userImage: userImage6,
 	},
 	{
+		id: 3,
 		bgImage: Image3,
 		name: "Awin Design",
 		content: "36.5K views - 3 days ago",
 		userImage: userImage5,
 	},
 	{
+		id: 4,
 		bgImage: Image4,
 		name: "Awin Design",
 		content: "86K views - 4 weeks ago",
@@ -38,7 +42,7 @@ const SWatched = () => {
 	return (
 		<>
 			{CartItem.map((e) => (
-				<nav className="w-64 h-full bg-gray-700 rounded-2xl">
+				<nav className="w-64 h-full bg-gray-700 rounded-2xl" key={e.id}>
 					<nav>
 						<img src={e.bgImage} alt="cart-img" className="bg-50% rounded-tl-2xl rounded-tr-2xl" />
 					</nav>
