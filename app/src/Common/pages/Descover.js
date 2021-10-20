@@ -6,7 +6,7 @@ const Descover = () => {
 	return (
 		<section>
 			<article className="mb-2 w-full h-12 flex items-center">
-				<header className="text-4xl text-white font-bold tracking-wider">Discover</header>
+				<header className="text-4xl text-white font-bold tracking-wider">Home</header>
 			</article>
 			<article className="w-full h-72 flex justify-around">
 				<SMain />

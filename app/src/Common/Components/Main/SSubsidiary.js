@@ -1,8 +1,16 @@
 import userImage2 from "../../../Assets/image/userImage/84.jpg";
+import AOS from "aos";
 
 const SSubsidiary = () => {
+	AOS.init();
 	return (
-		<nav className="h-full w-30% bg-yellow-300 rounded-2xl bg-main-image-2 bg-contain bg-no-repeat bg-right">
+		<nav
+			className="h-full w-30% bg-yellow-300 rounded-2xl bg-main-image-2 bg-contain bg-no-repeat bg-right"
+			data-aos="fade-right"
+			data-aos-duration="700"
+			data-aos-delay="600"
+			data-aos-easing="ease-in-out"
+		>
 			<nav className="mx-auto w-90% h-full flex flex-col justify-around items-start">
 				<h1 className="w-55% text-white text-4xl text-left">Skateboard Tips You need to Know</h1>
 				<nav className="w-full flex items-center">

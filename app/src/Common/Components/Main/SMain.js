@@ -1,8 +1,15 @@
 import userImage1 from "../../../Assets/image/userImage/44.jpg";
+import AOS from "aos";
 
 const SMain = () => {
+	AOS.init();
 	return (
-		<nav className="h-full w-68% bg-red-500 rounded-2xl bg-main-image-1 bg-contain bg-no-repeat bg-right">
+		<nav
+			className="h-full w-68% bg-red-500 rounded-2xl bg-main-image-1 bg-contain bg-no-repeat bg-right"
+			data-aos="fade-right"
+			data-aos-duration="700"
+			data-aos-easing="ease-in-out"
+		>
 			<nav className="w-2/3 h-full grid place-items-center">
 				<h1 className="w-4/5 text-white text-5xl">
 					How to do basic jumping and how to landing safely

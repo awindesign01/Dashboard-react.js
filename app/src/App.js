@@ -3,7 +3,8 @@ import Main from "./Common/Components/Main/Main";
 import Header from "./Common/Layout/Header/Header";
 import Sidebar from "./Common/Layout/Sidebar/Sidebar";
 
-function App() {
+function App(props) {
+	console.log(props);
 	return (
 		<section className="App">
 			<article className="w-full h-16">

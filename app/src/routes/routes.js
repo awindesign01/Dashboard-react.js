@@ -9,7 +9,7 @@ import Competition from "../Common/pages/Competition";
 import Community from "../Common/pages/Community";
 
 const routes = [
-	{ path: "/discover", component: Descover, exact: true },
+	{ path: "/", component: Descover, exact: true },
 	{ path: "/trending", component: Trending },
 	{ path: "/streaming", component: Streaming },
 	{ path: "/playlist", component: Playlist },
