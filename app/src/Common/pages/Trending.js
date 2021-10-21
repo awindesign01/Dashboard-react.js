@@ -1,6 +1,7 @@
 import MainTrending from "../Components/Trending/MainTrending";
 import SCharTrending from "../Components/Trending/SChartTrending";
 import SChartTrending from "../Components/Trending/SChartTrending2";
+import SCoins from "../Components/Trending/SCoins";
 
 const m = [
 	"January",
@@ -34,7 +35,9 @@ const Trending = () => {
         <SCharTrending />
         <SChartTrending />
       </article>
-			<article className="my-3 w-full h-40 flex items-center border"></article>
+			<article className="my-3 w-full h-40 flex items-center">
+				<SCoins />
+			</article>
 		</section>
 	);
 };

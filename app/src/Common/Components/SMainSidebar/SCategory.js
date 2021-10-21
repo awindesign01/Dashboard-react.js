@@ -2,13 +2,13 @@ import { AiFillHome } from "react-icons/ai";
 import { FiTrendingUp } from "react-icons/fi";
 import { IoIosDownload } from "react-icons/io";
 import { HiDocumentDownload } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavMenu = [
-	{ icon: <AiFillHome />, text: "Live Stream", path: "./live-stream" },
-	{ icon: <FiTrendingUp />, text: "Tutorial", path: "/tutorial" },
-	{ icon: <IoIosDownload />, text: "Competition", path: "/competition" },
-	{ icon: <HiDocumentDownload />, text: "Community", path: "/community" },
+	{ icon: <AiFillHome />, text: "Live Stream", to: "./live-stream" },
+	{ icon: <FiTrendingUp />, text: "Tutorial", to: "/tutorial" },
+	{ icon: <IoIosDownload />, text: "Competition", to: "/competition" },
+	{ icon: <HiDocumentDownload />, text: "Community", to: "/community" },
 ];
 
 const SCategory = () => {
@@ -22,12 +22,25 @@ const SCategory = () => {
 					<nav className="w-2/3">
 						<Link to={i.path} key={i.path}>
 							<nav className="my-3 w-full flex items-center group ">
-								<nav className="w-9 h-9 bg-gray-800 grid place-items-center rounded-xl text-lg text-white text-opacity-40 group-hover:bg-yellow-300 group-hover:text-white transition">
+								<NavLink
+									to={i.to}
+									className="w-9 h-9 bg-black-1 grid place-items-center rounded-xl text-lg text-white text-opacity-40 group-hover:bg-yellow-300 group-hover:text-white transition"
+									activeStyle={{
+										backgroundColor: "rgba(252, 211, 77)",
+										color: "#fff",
+									}}
+								>
 									{i.icon}
-								</nav>
-								<nav className="mx-3 text-gray-500 font-bold group-hover:text-white transition">
+								</NavLink>
+								<NavLink
+									to={i.to}
+									className="mx-3 text-gray-500 font-bold group-hover:text-white transition"
+									activeStyle={{
+										color: "#fff",
+									}}
+								>
 									<p>{i.text}</p>
-								</nav>
+								</NavLink>
 							</nav>
 						</Link>
 					</nav>

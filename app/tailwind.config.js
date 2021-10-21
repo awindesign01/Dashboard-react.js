@@ -16,7 +16,9 @@ module.exports = {
 				"43rem": "43rem",
 				"96rem": "96rem",
 				"10%": "10%",
+				"15%": "15%",
 				"30%": "30%",
+				"45%": "45%",
 				"90%": "90%",
 			},
 			backgroundImage: {
@@ -33,13 +35,17 @@ module.exports = {
 			colors: {
 				"green-1": "#1aac28",
 				"red-1": "#b62327",
+				"black-1": "rgba(23,23,23,0.78)",
+				"yellow-1": "rgba(252, 211, 77)",
 			},
 		},
 	},
 	variants: {
 		extend: {
 			divideColor: ["group-hover"],
-			transitionProperty: ["hover", "focus"],
+			transitionProperty: ["hover", "focus", "active"],
+			backgroundColor: ["active", "visited"],
+			textColor: ["active", "visited"],
 		},
 	},
 	plugins: [],

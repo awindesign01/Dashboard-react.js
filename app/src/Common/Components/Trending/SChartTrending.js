@@ -12,101 +12,112 @@ import {
 const data = [
 	{
 		name: "Jan",
-		uv: 4000,
-		pv: 2400,
+		"Learn / h": 12,
+		"Programming / h": 8,
 		amt: 2400,
 	},
 	{
 		name: "Feb",
-		uv: 3000,
-		pv: 1398,
+		"Learn / h": 8,
+		"Programming / h": 6,
 		amt: 2210,
 	},
 	{
 		name: "Mar",
-		uv: 2000,
-		pv: 9800,
+		"Learn / h": 2,
+		"Programming / h": 2,
 		amt: 2290,
 	},
 	{
 		name: "Apr",
-		uv: 2780,
-		pv: 3908,
+		"Learn / h": 8,
+		"Programming / h": 12,
 		amt: 2000,
 	},
 	{
 		name: "May",
-		uv: 1890,
-		pv: 4800,
+		"Learn / h": 7,
+		"Programming / h": 5,
 		amt: 2181,
 	},
 	{
 		name: "June",
-		uv: 2390,
-		pv: 3800,
+		"Learn / h": 7,
+		"Programming / h": 7,
 		amt: 2500,
 	},
 	{
 		name: "Aug",
-		uv: 3490,
-		pv: 4300,
+		"Learn / h": 6,
+		"Programming / h": 8,
 		amt: 2100,
 	},
 	{
 		name: "Sep",
-		uv: 3490,
-		pv: 4300,
+		"Learn / h": 6,
+		"Programming / h": 5,
 		amt: 2100,
 	},
 	{
 		name: "Oct",
-		uv: 3490,
-		pv: 4300,
+		"Learn / h": 8,
+		"Programming / h": 6,
 		amt: 2100,
 	},
 	{
 		name: "Nov",
-		uv: 3490,
-		pv: 4300,
+		"Learn / h": 2,
+		"Programming / h": 7,
 		amt: 2100,
 	},
 	{
 		name: "Dec",
-		uv: 3490,
-		pv: 4300,
+		"Learn / h": 8,
+		"Programming / h": 2,
 		amt: 2100,
 	},
 ];
 
 const SCharTrending = () => {
 	return (
-		<nav className="h-full w-63.5% bg-gray-700 rounded-xl flex flex-col justify-between">
-			<nav>
-				<nav>
-					<p>Your work summary</p>
+		<nav
+			className="h-full w-63.5% bg-black-1 rounded-xl flex flex-col justify-between"
+			data-aos="fade-right"
+			data-aos-duration="500"
+			data-aos-delay="500"
+			data-aos-easing="ease-in-out"
+		>
+			<nav className="h-15% flex justify-around">
+				<nav className="w-2/5 h-full flex flex-col justify-center">
+					<p className="text-white text-sm font-bold">Your work summary</p>
+					<p className="text-white text-sm font-bold text-opacity-50">Jan - Dec</p>
 				</nav>
-				<nav></nav>
-				<nav></nav>
+				<nav className="w-2/5 h-full"></nav>
 			</nav>
-			<ResponsiveContainer width="100%" height="80%" className="">
+			<ResponsiveContainer width="100%" height="85%">
 				<LineChart
 					width={500}
 					height={300}
 					data={data}
 					margin={{
-						top: 5,
+						top: 10,
 						right: 30,
-						left: 20,
+						left: 0,
 						bottom: 5,
 					}}
 				>
-					<CartesianGrid strokeDasharray="3 3" />
+					<CartesianGrid strokeDasharray="0 3" />
 					<XAxis dataKey="name" />
 					<YAxis />
 					<Tooltip />
 					<Legend />
-					<Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-					<Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+					<Line
+						type="monotone"
+						dataKey="Learn / h"
+						stroke="rgba(239, 68, 70)"
+						activeDot={{ r: 10 }}
+					/>
+					<Line type="monotone" dataKey="Programming / h" stroke="rgba(252, 211, 77)" />
 				</LineChart>
 			</ResponsiveContainer>
 		</nav>

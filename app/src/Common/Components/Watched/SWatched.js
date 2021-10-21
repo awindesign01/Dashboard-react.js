@@ -49,7 +49,7 @@ const SWatched = () => {
 		<>
 			{CartItem.map((e) => (
 				<nav
-					className="w-64 h-full bg-gray-700 rounded-2xl"
+					className="w-64 h-full bg-black-1 rounded-2xl"
 					key={e.id}
 					data-aos="fade-right"
 					data-aos-duration="700"
@@ -64,7 +64,7 @@ const SWatched = () => {
 							<p className="text-white text-lg font-bold tracking-wider">{e.name}</p>
 						</nav>
 						<nav>
-							<nav className="h-14 w-14 border-2 rounded-full grid place-items-center">
+							<nav className="h-14 w-14 border-2 border-opacity-40 rounded-full grid place-items-center">
 								<img src={e.userImage} alt="user" className="h-12 w-12 rounded-full" />
 							</nav>
 						</nav>

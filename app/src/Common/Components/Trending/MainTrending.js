@@ -14,7 +14,7 @@ const TrandingUser = [
 		price: <p className="text-lg text-green-1 font-bold">$ 650.00</p>,
 		paragraphs: "Last 6 month",
 		content: "5K views - 1 weeks ago",
-		data_aos_delay: 800,
+		data_aos_delay: 200,
 	},
 	{
 		id: 2,
@@ -25,7 +25,7 @@ const TrandingUser = [
 		price: <p className="text-lg text-red-1 font-bold">$ 3600.00</p>,
 		paragraphs: "Last 6 month",
 		content: "11.8K views - 12 weeks ago",
-		data_aos_delay: 1100,
+		data_aos_delay: 400,
 	},
 	{
 		id: 3,
@@ -36,26 +36,26 @@ const TrandingUser = [
 		price: <p className="text-lg text-red-1 font-bold">$ 7620.00</p>,
 		paragraphs: "Last 6 month",
 		content: "238K views - 3 weeks ago",
-		data_aos_delay: 1400,
+		data_aos_delay: 600,
 	},
 ];
 
 const MainTrending = () => {
-	AOS.init();
+	// AOS.init();
 	return (
 		<>
 			{TrandingUser.map((c) => (
 				<nav
-					className="w-30% h-28 bg-gray-700 rounded-xl flex justify-around items-center"
-					data-aos="fade-right"
-					data-aos-duration="700"
+					className="w-30% h-28 bg-black-1 rounded-xl flex justify-around items-center"
+					data-aos="fade-down"
+					data-aos-duration="500"
 					data-aos-easing="ease-in-out"
 					data-aos-delay={c.data_aos_delay}
 					key={c.id}
 				>
 					<nav className="w-2/3 h-4/5 flex flex-wrap">
 						<nav className="w-1/4 h-3/5 grid place-items-center">
-							<nav className="h-12 w-12 border-2 rounded-full flex justify-center items-center">
+							<nav className="h-12 w-12 border-2 border-opacity-40 rounded-full flex justify-center items-center">
 								<img src={c.img} alt="user" className="h-10 w-10 rounded-full" />
 							</nav>
 						</nav>

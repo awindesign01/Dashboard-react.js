@@ -1,8 +1,7 @@
 import { Route } from "react-router-dom";
 import routes from "../../../routes/routes";
 
-const Main = (props) => {
-	console.log(props);
+const Main = () => {
 	return (
 		<section className="w-4/5 h-full">
 			{routes.map((r) => (

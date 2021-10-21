@@ -3,11 +3,10 @@ import { FiTrendingUp } from "react-icons/fi";
 import { IoIosDownload, IoMdHeartEmpty } from "react-icons/io";
 import { HiDocumentDownload } from "react-icons/hi";
 import { BsBookmarkPlusFill } from "react-icons/bs";
-import { NavLink,useLocation,useParams,useHistory,withRouter } from "react-router-dom";
-import "./SMenu.css";
+import { NavLink, Link, withRouter } from "react-router-dom";
 
 const NavMenu = [
-	{ icon: <AiFillHome />, text: "Home", to: "/", exact: true },
+	{ icon: <AiFillHome />, text: "Home", to: "/", exact: false },
 	{ icon: <FiTrendingUp />, text: "Trending", to: "/trending" },
 	{ icon: <IoIosDownload />, text: "Streaming", to: "/streaming" },
 	{ icon: <HiDocumentDownload />, text: "Playlist", to: "/playlist" },
@@ -15,9 +14,6 @@ const NavMenu = [
 ];
 
 const SMenu = (props) => {
-	console.log(useLocation());
-	console.log(useParams());
-	console.log(useHistory());
 	return (
 		<>
 			<nav className="pt-5 pb-3">
@@ -26,20 +22,30 @@ const SMenu = (props) => {
 			<nav>
 				{NavMenu.map((i) => (
 					<nav className="w-2/3" key={i.to}>
-						<NavLink to={i.to} exact={i.exact || false} activeClassName="activeLink">
+						<Link to={i.to} exact={i.exact || false}>
 							<nav className="my-5 w-full flex items-center group">
-								{/* <nav className="w-9 h-9 bg-gray-800 grid place-items-center rounded-xl text-lg text-white text-opacity-40 group-hover:bg-red-500 group-hover:text-white transition">
+								<NavLink
+									to={i.to}
+									className="w-9 h-9 bg-black-1 grid place-items-center rounded-xl text-lg text-white text-opacity-40 group-hover:bg-red-500 group-hover:text-white transition"
+									activeStyle={{
+										backgroundColor: "rgba(239, 68, 68)",
+										color: "#fff",
+									}}
+								>
 									{i.icon}
-								</nav>
-								<nav
+								</NavLink>
+								<NavLink
+									to={i.to}
+									activeStyle={{
+										color: "#fff",
+									}}
 									className="mx-3 text-gray-500 font-bold group-hover:text-white transition"
-									activeClassName="activeLink"
 								>
 									<p>{i.text}</p>
-								</nav> */}
-								{i.text}
+								</NavLink>
+								{/* {i.text} */}
 							</nav>
-						</NavLink>
+						</Link>
 					</nav>
 				))}
 			</nav>
