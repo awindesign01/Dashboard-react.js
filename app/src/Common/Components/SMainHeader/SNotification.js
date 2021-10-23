@@ -8,7 +8,7 @@ const SNotification = () => {
 	return (
 		// header phone
 		<nav className="pr-1 w-full h-full flex justify-end items-center">
-			<button className="w-full md:w-1/2 h-90% flex justify-around items-center">
+			<button className=" hidden w-full lg:w-30% xl:w-1/4 h-90% lg:flex justify-around items-center">
 				<img
 					src={admin}
 					alt="admin"
@@ -19,11 +19,12 @@ const SNotification = () => {
 					<IoIosArrowDown className="text-white text-lg text-opacity-40" />
 				</button>
 			</button>
-			<nav className="w-2/5 md:w-1/5 h-90% flex justify-between items-center">
-				<button>
+			<nav className="w-2/5 md:w-1/6 h-90% flex justify-between lg:justify-center items-center">
+				<button className="h-full w-full flex justify-center items-center">
 					<RiNotification4Fill className="text-xl text-white text-opacity-40" />
+					<nav className="h-3 w-3 bg-red-500 rounded-full border-2 border-black-2 relative right-2 bottom-2"></nav>
 				</button>
-				<button>
+				<button className="h-full w-full lg:hidden flex justify-center items-center">
 					<FiMenu className="text-2xl text-white text-opacity-40" />
 				</button>
 			</nav>
