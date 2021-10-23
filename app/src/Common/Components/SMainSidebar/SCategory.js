@@ -14,13 +14,13 @@ const NavMenu = [
 const SCategory = () => {
 	return (
 		<>
-			<nav className="pt-2 pb-3">
+			{/* <nav className="pt-2 pb-3">
 				<p className="text-gray-500 text-opacity-50 text-xs font-bold tracking-widest">CATEGORY</p>
 			</nav>
 			<nav>
 				{NavMenu.map((i) => (
 					<nav className="w-2/3">
-						<Link to={i.path} key={i.path}>
+						<Link to={i.to} key={i.to}>
 							<nav className="my-3 w-full flex items-center group ">
 								<NavLink
 									to={i.to}
@@ -45,7 +45,7 @@ const SCategory = () => {
 						</Link>
 					</nav>
 				))}
-			</nav>
+			</nav> */}
 		</>
 	);
 };

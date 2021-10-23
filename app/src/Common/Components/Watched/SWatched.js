@@ -47,7 +47,7 @@ const SWatched = () => {
 	AOS.init();
 	return (
 		<>
-			{CartItem.map((e) => (
+			{/* {CartItem.map((e) => (
 				<nav
 					className="w-64 h-full bg-black-1 rounded-2xl"
 					key={e.id}
@@ -73,7 +73,7 @@ const SWatched = () => {
 						<h2 className="text-center text-white text-opacity-40">{e.content}</h2>
 					</nav>
 				</nav>
-			))}
+			))} */}
 		</>
 	);
 };

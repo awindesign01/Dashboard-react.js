@@ -63,7 +63,7 @@ const SCoins = () => {
 	// AOS.init();
 	return (
 		<nav className="w-full h-full flex justify-around items-center">
-			{Item.map((i) => (
+			{/* {Item.map((i) => (
 				<nav
 					className="h-full w-30% bg-black-1 rounded-xl flex flex-col justify-around items-center"
 					key={i.id}
@@ -103,7 +103,7 @@ const SCoins = () => {
 						</nav>
 					</nav>
 				</nav>
-			))}
+			))} */}
 		</nav>
 	);
 };

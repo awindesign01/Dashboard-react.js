@@ -4,7 +4,7 @@ import SMenu from "../../Components/SMainSidebar/SMenu";
 const Sidebar = (props) => {
 	return (
 		<section className="w-1/6 h-full">
-			<article className="mx-auto w-11/12 h-full">
+			{/* <article className="mx-auto w-11/12 h-full">
 				<article>
 					<SMenu />
 				</article>
@@ -12,7 +12,7 @@ const Sidebar = (props) => {
 				<article>
 					<SCategory />
 				</article>
-			</article>
+			</article> */}
 		</section>
 	);
 };

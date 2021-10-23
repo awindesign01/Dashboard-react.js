@@ -55,7 +55,7 @@ const SChartTrending = () => {
 			data-aos-delay="700"
 			data-aos-easing="ease-in-out"
 		>
-			<nav className="h-15%">
+			{/* <nav className="h-15%">
 				<nav className="mx-auto w-11/12 flex flex-col justify-center items-center">
 					<p className="text-white font-bold text-sm">Your work summary</p>
 					<p className="text-white font-bold text-sm text-opacity-40">Jan- Dec</p>
@@ -74,7 +74,7 @@ const SChartTrending = () => {
 						fillOpacity={0.6}
 					/>
 				</RadarChart>
-			</ResponsiveContainer>
+			</ResponsiveContainer> */}
 		</nav>
 	);
 };

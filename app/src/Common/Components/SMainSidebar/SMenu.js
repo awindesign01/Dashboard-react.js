@@ -16,7 +16,7 @@ const NavMenu = [
 const SMenu = (props) => {
 	return (
 		<>
-			<nav className="pt-5 pb-3">
+			{/* <nav className="pt-5 pb-3">
 				<p className="text-gray-500 text-opacity-50 text-xs font-bold tracking-widest">MENU</p>
 			</nav>
 			<nav>
@@ -43,12 +43,11 @@ const SMenu = (props) => {
 								>
 									<p>{i.text}</p>
 								</NavLink>
-								{/* {i.text} */}
 							</nav>
 						</Link>
 					</nav>
 				))}
-			</nav>
+			</nav> */}
 		</>
 	);
 };

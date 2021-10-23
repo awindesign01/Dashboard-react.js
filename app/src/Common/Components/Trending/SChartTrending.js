@@ -87,7 +87,7 @@ const SCharTrending = () => {
 			data-aos-delay="500"
 			data-aos-easing="ease-in-out"
 		>
-			<nav className="h-15% flex justify-around">
+			{/* <nav className="h-15% flex justify-around">
 				<nav className="w-2/5 h-full flex flex-col justify-center">
 					<p className="text-white text-sm font-bold">Your work summary</p>
 					<p className="text-white text-sm font-bold text-opacity-50">Jan - Dec</p>
@@ -119,7 +119,7 @@ const SCharTrending = () => {
 					/>
 					<Line type="monotone" dataKey="Programming / h" stroke="rgba(252, 211, 77)" />
 				</LineChart>
-			</ResponsiveContainer>
+			</ResponsiveContainer> */}
 		</nav>
 	);
 };

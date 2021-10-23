@@ -5,12 +5,12 @@ const SMain = () => {
 	AOS.init();
 	return (
 		<nav
-			className="h-full w-68% bg-red-500 rounded-2xl bg-main-image-1 bg-contain bg-no-repeat bg-right"
+			// className="h-full w-68% bg-red-500 rounded-2xl bg-main-image-1 bg-contain bg-no-repeat bg-right"
 			data-aos="fade-right"
 			data-aos-duration="700"
 			data-aos-easing="ease-in-out"
 		>
-			<nav className="w-2/3 h-full grid place-items-center">
+			{/* <nav className="w-2/3 h-full grid place-items-center">
 				<h1 className="w-4/5 text-white text-5xl">
 					How to do basic jumping and how to landing safely
 				</h1>
@@ -24,7 +24,7 @@ const SMain = () => {
 					</nav>
 				</nav>
 			</nav>
-			<nav className="w-1/3 h-4/5"></nav>
+			<nav className="w-1/3 h-4/5"></nav> */}
 		</nav>
 	);
 };

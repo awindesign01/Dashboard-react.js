@@ -5,7 +5,7 @@ import SWatched from "../Components/Watched/SWatched";
 const Descover = () => {
 	return (
 		<section>
-			<article className="mb-2 w-full h-12 flex items-center">
+			{/* <article className="mb-2 w-full h-12 flex items-center">
 				<header className="text-4xl text-white font-bold tracking-wider">Home</header>
 			</article>
 			<article className="w-full h-72 flex justify-around">
@@ -17,7 +17,7 @@ const Descover = () => {
 			</article>
 			<article className="w-full h-64 flex justify-around items-center">
 				<SWatched />
-			</article>
+			</article> */}
 		</section>
 	);
 };

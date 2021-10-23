@@ -44,7 +44,7 @@ const MainTrending = () => {
 	// AOS.init();
 	return (
 		<>
-			{TrandingUser.map((c) => (
+			{/* {TrandingUser.map((c) => (
 				<nav
 					className="w-30% h-28 bg-black-1 rounded-xl flex justify-around items-center"
 					data-aos="fade-down"
@@ -74,18 +74,16 @@ const MainTrending = () => {
 					<nav className="w-30% h-4/5">
 						<nav className="w-full h-9 grid place-items-center">
 							{c.icon}
-							{/* <FiTrendingUp className="text-2xl text-red-1" /> */}
 						</nav>
 						<nav className="w-full h-8 grid place-items-center">
 							{c.price}
-							{/* <p className="text-lg text-green-1 font-bold">$ 3600.00</p> */}
 						</nav>
 						<nav className="w-full h-5 grid place-items-center">
 							<p className="text-white text-opacity-40 text-xs tracking-wider">{c.paragraphs}</p>
 						</nav>
 					</nav>
 				</nav>
-			))}
+			))} */}
 		</>
 	);
 };
