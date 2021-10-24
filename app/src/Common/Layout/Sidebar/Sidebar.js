@@ -3,7 +3,7 @@ import SMenu from "../../Components/SMainSidebar/SMenu";
 
 const Sidebar = (props) => {
 	return (
-		<section className="w-1/6 h-full">
+		<section className="w-1/6 h-full hidden lg:block">
 			{/* <article className="mx-auto w-11/12 h-full">
 				<article>
 					<SMenu />
