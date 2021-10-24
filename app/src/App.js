@@ -4,9 +4,9 @@ import Header from "./Common/Layout/Header/Header";
 import Sidebar from "./Common/Layout/Sidebar/Sidebar";
 
 function App(props) {
-	console.log(props);
+	// console.log(props);
 	return (
-		<section className="App">
+		<section className="App mx-auto w-95% lg:w-full">
 			<article className="w-full h-16">
 				<Header />
 			</article>
