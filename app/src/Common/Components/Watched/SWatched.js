@@ -15,7 +15,7 @@ const CartItem = [
 		name: "Awin Design",
 		content: "53.1K views - 2 weeks ago",
 		userImage: userImage3,
-		data_aos_delay: 1000,
+		data_aos_delay: 500,
 	},
 	{
 		id: 2,
@@ -23,7 +23,7 @@ const CartItem = [
 		name: "Awin Design",
 		content: "27.8K views - 3 weeks ago",
 		userImage: userImage6,
-		data_aos_delay: 1300,
+		data_aos_delay: 800,
 	},
 	{
 		id: 3,
@@ -31,7 +31,7 @@ const CartItem = [
 		name: "Awin Design",
 		content: "36.5K views - 3 days ago",
 		userImage: userImage5,
-		data_aos_delay: 1600,
+		data_aos_delay: 1100,
 	},
 	{
 		id: 4,
@@ -39,7 +39,7 @@ const CartItem = [
 		name: "Awin Design",
 		content: "86K views - 4 weeks ago",
 		userImage: userImage4,
-		data_aos_delay: 1900,
+		data_aos_delay: 1400,
 	},
 ];
 
@@ -47,9 +47,9 @@ const SWatched = () => {
 	AOS.init();
 	return (
 		<>
-			{/* {CartItem.map((e) => (
+			{CartItem.map((e) => (
 				<nav
-					className="w-64 h-full bg-black-1 rounded-2xl"
+					className="mb-6 lg:m-0 w-full md:w-45% lg:w-1/5 h-full bg-black-1 rounded-2xl"
 					key={e.id}
 					data-aos="fade-right"
 					data-aos-duration="700"
@@ -57,11 +57,15 @@ const SWatched = () => {
 					data-aos-delay={e.data_aos_delay}
 				>
 					<nav>
-						<img src={e.bgImage} alt="cart-img" className="bg-50% rounded-tl-2xl rounded-tr-2xl" />
+						<img
+							src={e.bgImage}
+							alt="cart-img"
+							className="bg-100% w-full rounded-tl-2xl rounded-tr-2xl"
+						/>
 					</nav>
 					<nav className="w-full h-14 flex justify-evenly items-end relative bottom-4">
 						<nav>
-							<p className="text-white text-lg font-bold tracking-wider">{e.name}</p>
+							<p className="text-white text-lg lg:text-base font-bold tracking-wider">{e.name}</p>
 						</nav>
 						<nav>
 							<nav className="h-14 w-14 border-2 border-opacity-40 rounded-full grid place-items-center">
@@ -70,10 +74,10 @@ const SWatched = () => {
 						</nav>
 					</nav>
 					<nav>
-						<h2 className="text-center text-white text-opacity-40">{e.content}</h2>
+						<p className="text-center text-white text-opacity-40 lg:text-xs tracking-wider">{e.content}</p>
 					</nav>
 				</nav>
-			))} */}
+			))}
 		</>
 	);
 };

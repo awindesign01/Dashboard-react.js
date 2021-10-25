@@ -23,7 +23,7 @@ const SMenu = () => {
 				{NavMenu.map((i) => (
 					<nav className="w-full" key={i.to}>
 						<Link to={i.to} exact={i.exact || false}>
-							<nav className="my-5 w-full flex items-center group">
+							<nav className="my-5 lg:my-2 xl:my-5 w-full flex items-center group">
 								<NavLink
 									to={i.to}
 									className="w-9 h-9 bg-black-1 grid place-items-center rounded-xl text-lg text-white text-opacity-40 group-hover:bg-red-500 group-hover:text-white transition"

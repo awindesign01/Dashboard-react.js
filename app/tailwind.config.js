@@ -38,11 +38,12 @@ module.exports = {
 			},
 			backgroundSize: {
 				"50%": "50%",
+				"100%": "100%",
 			},
 			colors: {
 				"green-1": "#1aac28",
 				"red-1": "#b62327",
-				"black-1": "rgba(23,23,23,0.9)",
+				"black-1": "rgba(23,23,23,0.95)",
 				"black-2": "#202020",
 				"black-3": "#303030",
 				"yellow-1": "rgba(252, 211, 77)",

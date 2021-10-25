@@ -21,7 +21,7 @@ const SCategory = () => {
 				{NavMenu.map((i) => (
 					<nav className="w-full">
 						<Link to={i.to} key={i.to}>
-							<nav className="my-5 w-full flex items-center group ">
+							<nav className="my-5 lg:my-2 xl:my-5 w-full flex items-center group ">
 								<NavLink
 									to={i.to}
 									className="w-9 h-9 bg-black-1 grid place-items-center rounded-xl text-lg text-white text-opacity-40 group-hover:bg-yellow-300 group-hover:text-white transition"
