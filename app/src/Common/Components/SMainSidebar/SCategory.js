@@ -14,14 +14,14 @@ const NavMenu = [
 const SCategory = () => {
 	return (
 		<>
-			{/* <nav className="pt-2 pb-3">
+			<nav className="mx-auto pt-2 pb-3 w-95%">
 				<p className="text-gray-500 text-opacity-50 text-xs font-bold tracking-widest">CATEGORY</p>
 			</nav>
-			<nav>
+			<nav className="mx-auto w-95%">
 				{NavMenu.map((i) => (
-					<nav className="w-2/3">
+					<nav className="w-full">
 						<Link to={i.to} key={i.to}>
-							<nav className="my-3 w-full flex items-center group ">
+							<nav className="my-5 w-full flex items-center group ">
 								<NavLink
 									to={i.to}
 									className="w-9 h-9 bg-black-1 grid place-items-center rounded-xl text-lg text-white text-opacity-40 group-hover:bg-yellow-300 group-hover:text-white transition"
@@ -45,7 +45,7 @@ const SCategory = () => {
 						</Link>
 					</nav>
 				))}
-			</nav> */}
+			</nav>
 		</>
 	);
 };

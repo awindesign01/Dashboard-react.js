@@ -13,15 +13,15 @@ const NavMenu = [
 	{ icon: <BsBookmarkPlusFill />, text: "Bookmark", to: "/bookmark" },
 ];
 
-const SMenu = (props) => {
+const SMenu = () => {
 	return (
 		<>
-			{/* <nav className="pt-5 pb-3">
+			<nav className="mx-auto w-95% pt-5 pb-3">
 				<p className="text-gray-500 text-opacity-50 text-xs font-bold tracking-widest">MENU</p>
 			</nav>
-			<nav>
+			<nav className="mx-auto w-95%">
 				{NavMenu.map((i) => (
-					<nav className="w-2/3" key={i.to}>
+					<nav className="w-full" key={i.to}>
 						<Link to={i.to} exact={i.exact || false}>
 							<nav className="my-5 w-full flex items-center group">
 								<NavLink
@@ -47,7 +47,7 @@ const SMenu = (props) => {
 						</Link>
 					</nav>
 				))}
-			</nav> */}
+			</nav>
 		</>
 	);
 };

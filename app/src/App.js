@@ -12,7 +12,7 @@ function App(props) {
 				<article className="w-full h-16">
 					<Header />
 				</article>
-				<article className="w-full lg:h-43rem flex justify-start">
+				<article className="w-full lg:h-43rem flex justify-start ">
 					<Sidebar />
 					<Main />
 				</article>

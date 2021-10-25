@@ -2,7 +2,7 @@ import { FiSearch } from "react-icons/fi";
 
 const SSearchHeader = () => {
 	return (
-		<nav className="hidden w-1/2 h-full lg:grid lg:place-items-center">
+		<nav className="hidden w-1/2 h-full lg:flex lg:justify-start lg:items-center">
 			<nav className="w-full lg:w-90% h-10 bg-black-1 border-2 border-opacity-40 flex justify-between items-center rounded-lg">
 				<input
 					type="search"
