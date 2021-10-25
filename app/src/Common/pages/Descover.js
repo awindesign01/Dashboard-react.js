@@ -15,11 +15,11 @@ const Descover = () => {
 			<article className="my-3 lg:ml-2 xl:ml-6 xl:my-6 w-auto h-12 flex items-center">
 				<header className="text-2xl text-white font-bold tracking-wider">Most Watched</header>
 			</article>
-			<article className="w-full h-auto flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap justify-around items-center">
+			<article className="w-full h-auto flex md:flex-row flex-wrap lg:flex-nowrap justify-around items-center">
 				<SWatched />
 			</article>
 		</section>
-	);
+	);	
 };
 
 export default Descover;

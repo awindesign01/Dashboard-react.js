@@ -49,7 +49,7 @@ const SWatched = () => {
 		<>
 			{CartItem.map((e) => (
 				<nav
-					className="mb-6 lg:m-0 w-full md:w-45% lg:w-1/5 h-full bg-black-1 rounded-2xl"
+					className="mb-6 lg:m-0 w-45% md:w-45% lg:w-1/5 h-full bg-black-1 rounded-2xl"
 					key={e.id}
 					data-aos="fade-right"
 					data-aos-duration="700"
