@@ -22,9 +22,12 @@ const Trending = () => {
 	return (
 		<section>
 			<article className="mb-2 w-full h-12 flex items-center ">
-				<header className="text-4xl text-white font-bold tracking-wider">Trending</header>
-				<p className="ml-4 text-white font-bold">
-					<span className="mr-1 text-2xl">»</span>
+				<header>
+					<h1 className="text-xl xl:text-2xl text-white font-bold tracking-wider">Trending</h1>
+				</header>
+				{/* data in page trending */}
+				<p className="ml-4 text-white text-xxs tracking-wider">
+					<span className="mr-1 text-xl">»</span>
 					{m[new Date().getMonth()]} / {new Date().getDate()} / {new Date().getFullYear()}
 				</p>
 			</article>

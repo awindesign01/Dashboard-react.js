@@ -34,7 +34,7 @@ const SCategory = () => {
 								</NavLink>
 								<NavLink
 									to={i.to}
-									className="mx-3 text-gray-500 font-bold group-hover:text-white transition"
+									className="mx-3 text-gray-500 text-sm xl:text-base font-bold group-hover:text-white transition"
 									activeStyle={{
 										color: "#fff",
 									}}

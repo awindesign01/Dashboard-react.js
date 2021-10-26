@@ -6,8 +6,8 @@ const Header = () => {
 		<section className="container h-16 flex justify-between">
 			<article className="w-2/5 md:w-1/5 lg:w-15% xl:w-12% h-full flex items-center bg-transparent lg:bg-black-1">
 				<nav className="mx-auto w-95%">
-					<h1 className="text-white text-opacity-90 font-bold text-xl md:text-2xl tracking-wider">
-						Dashboard
+					<h1 className="text-white text-opacity-90 font-bold text-xl tracking-wider">
+						Awin Design
 					</h1>
 				</nav>
 			</article>

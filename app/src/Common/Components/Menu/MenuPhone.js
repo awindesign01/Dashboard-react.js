@@ -26,14 +26,14 @@ const MenuPhone = () => {
 				<nav className="w-2/3 lg:w-90% h-10 bg-black-1 border-2 border-opacity-40 flex justify-between items-center rounded-lg">
 					<input
 						type="search"
-						className="px-2 w-90% h-90% bg-transparent text-white font-bold tracking-wider"
+						className="px-2 w-90% h-90% bg-transparent text-white text-sm font-bold tracking-wider"
 						placeholder="Search"
 					/>
 					<FiSearch className="w-6 text-xl text-white text-opacity-40" />
 				</nav>
-				<button className="w-30% md:w-1/5 lg:w-90% h-10 bg-black-1 border-2 border-yellow-400 border-opacity-60 flex justify-around items-center rounded-lg">
+				<button className="p-1 w-30% md:w-1/5 lg:w-90% h-10 bg-black-1 border-2 border-yellow-400 border-opacity-60 flex justify-around items-center rounded-lg">
 					<FiStar className="text-yellow-400 text-xl"/>
-					<p className="text-white font-bold">Premium</p>
+					<p className="text-white text-sm font-bold">Premium</p>
 				</button>
 			</nav>
 			<nav className="h-4/5 w-4/5">
@@ -56,9 +56,9 @@ const MenuPhone = () => {
 									activeStyle={{
 										color: "#fff",
 									}}
-									className="mx-3 text-gray-500 font-bold group-hover:text-white transition tracking-wider"
+									className="mx-3 text-gray-500 font-bold text-sm group-hover:text-white transition tracking-wider"
 								>
-									<p>{i.text}</p>
+									<h4>{i.text}</h4>
 								</NavLink>
 							</nav>
 						</Link>
@@ -81,12 +81,12 @@ const MenuPhone = () => {
 								</NavLink>
 								<NavLink
 									to={i.to}
-									className="mx-3 text-gray-500 font-bold group-hover:text-white transition tracking-wider"
+									className="mx-3 text-gray-500 font-bold text-sm group-hover:text-white transition tracking-wider"
 									activeStyle={{
 										color: "#fff",
 									}}
 								>
-									<p>{i.text}</p>
+									<h4>{i.text}</h4>
 								</NavLink>
 							</nav>
 						</Link>

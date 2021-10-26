@@ -63,7 +63,7 @@ const SWatched = () => {
 							className="bg-100% w-full rounded-tl-2xl rounded-tr-2xl"
 						/>
 					</nav>
-					<nav className="w-full h-14 flex justify-evenly items-end relative bottom-4">
+					<nav className="w-full h-14 flex flex-col-reverse justify-center items-center relative bottom-4">
 						<nav>
 							<p className="text-white text-lg lg:text-base font-bold tracking-wider">{e.name}</p>
 						</nav>
@@ -74,7 +74,9 @@ const SWatched = () => {
 						</nav>
 					</nav>
 					<nav>
-						<p className="text-center text-white text-opacity-40 lg:text-xs tracking-wider">{e.content}</p>
+						<p className="text-center text-xs text-white text-opacity-40 lg:text-xs tracking-wider">
+							{e.content}
+						</p>
 					</nav>
 				</nav>
 			))}
