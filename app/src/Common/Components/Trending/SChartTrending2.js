@@ -49,17 +49,18 @@ const data = [
 const SChartTrending = () => {
 	return (
 		<nav
-			className="h-full w-30% bg-black-1 rounded-xl flex flex-col justify-between"
+			className="h-80 w-full md:w-30% bg-black-1 rounded-xl flex flex-col justify-between"
 			data-aos="fade-right"
 			data-aos-duration="500"
 			data-aos-delay="700"
 			data-aos-easing="ease-in-out"
 		>
-			{/* <nav className="h-15%">
-				<nav className="mx-auto w-11/12 flex flex-col justify-center items-center">
+			<nav className="h-15% flex justify-around">
+				<nav className="w-2/5 md:w-3/5 h-full flex flex-col justify-center">
 					<p className="text-white font-bold text-sm">Your work summary</p>
 					<p className="text-white font-bold text-sm text-opacity-40">Jan- Dec</p>
 				</nav>
+				<nav className="w-2/5 md:w-1/5 h-full"></nav>
 			</nav>
 			<ResponsiveContainer width="100%" height="100%">
 				<RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
@@ -74,7 +75,7 @@ const SChartTrending = () => {
 						fillOpacity={0.6}
 					/>
 				</RadarChart>
-			</ResponsiveContainer> */}
+			</ResponsiveContainer>
 		</nav>
 	);
 };

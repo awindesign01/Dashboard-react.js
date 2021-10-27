@@ -19,26 +19,31 @@ const m = [
 ];
 
 const Trending = () => {
+	const style =
+		"my-3 w-full flex flex-col md:flex-row md:flex-wrap justify-around items-center";
+
 	return (
-		<section>
-			<article className="mb-2 w-full h-12 flex items-center ">
+		<section className="h-auto">
+			<article className="mb-2 w-full h-12 flex items-center">
 				<header>
-					<h1 className="text-xl xl:text-2xl text-white font-bold tracking-wider">Trending</h1>
+					<h1 className="lg:ml-2 xl:ml-4 text-xl xl:text-2xl text-white font-bold tracking-wider">
+						Trending
+					</h1>
 				</header>
 				{/* data in page trending */}
-				<p className="ml-4 text-white text-xxs tracking-wider">
+				<p className="ml-4 text-white text-xxs xl:text-xs tracking-wider">
 					<span className="mr-1 text-xl">»</span>
 					{m[new Date().getMonth()]} / {new Date().getDate()} / {new Date().getFullYear()}
 				</p>
 			</article>
-			<article className="w-full h-28 flex justify-around">
+			<article className={`${style} ${"xl:h-1/5"}`}>
 				<MainTrending />
 			</article>
-			<article className="my-3 w-full h-80 flex justify-around items-center">
-				{/* <SCharTrending />
-        <SChartTrending /> */}
+			<article className={`${style} ${"xl:h-3/5"}`}>
+				<SCharTrending />
+				<SChartTrending />
 			</article>
-			<article className="my-3 w-full h-40 flex items-center">
+			<article className={`${style} ${"xl:h-1/5"}`}>
 				<SCoins />
 			</article>
 		</section>

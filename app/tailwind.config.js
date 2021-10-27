@@ -46,6 +46,7 @@ module.exports = {
 			colors: {
 				"green-1": "#1aac28",
 				"red-1": "#b62327",
+				"red-2": "rgba(239, 68, 68)",
 				"black-1": "rgba(23,23,23,0.95)",
 				"black-2": "#202020",
 				"black-3": "#303030",

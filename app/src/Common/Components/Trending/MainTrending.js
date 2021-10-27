@@ -10,8 +10,8 @@ const TrandingUser = [
 		img: image1,
 		name: "Kelton Murazik",
 		region: "USA",
-		icon: <FiTrendingUp className="text-2xl text-green-1" />,
-		price: <p className="text-lg text-green-1 font-bold">$ 650.00</p>,
+		icon: <FiTrendingUp className="text-2xl lg:text-xl xl:text-2xl text-green-1" />,
+		price: <p className="text-lg xl:text-xl lg:text-base text-green-1 font-bold">$ 650.00</p>,
 		paragraphs: "Last 6 month",
 		content: "5K views - 1 weeks ago",
 		data_aos_delay: 200,
@@ -21,8 +21,8 @@ const TrandingUser = [
 		img: image2,
 		name: "Brycen Kozey",
 		region: "GER",
-		icon: <FiTrendingDown className="text-2xl text-red-1" />,
-		price: <p className="text-lg text-red-1 font-bold">$ 3600.00</p>,
+		icon: <FiTrendingDown className="text-2xl lg:text-xl xl:text-2xl text-red-1" />,
+		price: <p className="text-lg xl:text-xl lg:text-base text-red-1 font-bold">$ 3600.00</p>,
 		paragraphs: "Last 6 month",
 		content: "11.8K views - 12 weeks ago",
 		data_aos_delay: 400,
@@ -32,8 +32,8 @@ const TrandingUser = [
 		img: image3,
 		name: "Herminia Rath",
 		region: "JAP",
-		icon: <FiTrendingDown className="text-2xl text-red-1" />,
-		price: <p className="text-lg text-red-1 font-bold">$ 7620.00</p>,
+		icon: <FiTrendingDown className="text-2xl lg:text-xl xl:text-2xl text-red-1" />,
+		price: <p className="text-lg xl:text-xl lg:text-base text-red-1 font-bold">$ 7620.00</p>,
 		paragraphs: "Last 6 month",
 		content: "238K views - 3 weeks ago",
 		data_aos_delay: 600,
@@ -44,9 +44,9 @@ const MainTrending = () => {
 	// AOS.init();
 	return (
 		<>
-			{/* {TrandingUser.map((c) => (
+			{TrandingUser.map((c) => (
 				<nav
-					className="w-30% h-28 bg-black-1 rounded-xl flex justify-around items-center"
+					className="mb-2 w-full md:w-45% lg:w-30% xl:h-32 bg-black-1 rounded-xl flex justify-around items-center"
 					data-aos="fade-down"
 					data-aos-duration="500"
 					data-aos-easing="ease-in-out"
@@ -60,30 +60,30 @@ const MainTrending = () => {
 							</nav>
 						</nav>
 						<nav className="pl-2 w-3/4 h-3/5">
-							<h1 className="text-white font-bold text-lg tracking-wide">{c.name}</h1>
-							<p className="text-white font-bold text-opacity-40 text-sm tracking-wide">
+							<h1 className="text-white font-bold text-lg lg:text-base tracking-wide">{c.name}</h1>
+							<p className="text-white font-bold text-opacity-40 text-sm lg:text-xs tracking-wide">
 								{c.region}
 							</p>
 						</nav>
 						<nav className="mx-auto w-90% h-2/5 text-white flex justify-start items-center">
-							<p className="text-white font-bold text-opacity-40 text-xs tracking-wide">
+							<p className="text-white font-bold text-opacity-40 text-xs lg:text-xxs xl:text-xs tracking-wide">
 								{c.content}
 							</p>
 						</nav>
 					</nav>
-					<nav className="w-30% h-4/5">
-						<nav className="w-full h-9 grid place-items-center">
+					<nav className="w-30% h-4/5 flex flex-col justify-evenly">
+						<nav className="w-full h-auto grid place-items-center">
 							{c.icon}
 						</nav>
-						<nav className="w-full h-8 grid place-items-center">
+						<nav className="w-full h-8 grid place-items-center ">
 							{c.price}
 						</nav>
 						<nav className="w-full h-5 grid place-items-center">
-							<p className="text-white text-opacity-40 text-xs tracking-wider">{c.paragraphs}</p>
+							<p className="text-white text-opacity-40 text-xs lg:text-xxs tracking-wider">{c.paragraphs}</p>
 						</nav>
 					</nav>
 				</nav>
-			))} */}
+			))}
 		</>
 	);
 };

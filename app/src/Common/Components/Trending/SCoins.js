@@ -56,20 +56,22 @@ const Item = [
 		priceColor2: "text-green-1",
 		Process2: <FiTrendingUp className="text-2xl text-green-1 " />,
 		data_aos_delay: 1300,
+		data_aos_offset: -50
 	},
 ];
 
 const SCoins = () => {
 	// AOS.init();
 	return (
-		<nav className="w-full h-full flex justify-around items-center">
-			{/* {Item.map((i) => (
+		<>
+			{Item.map((i) => (
 				<nav
-					className="h-full w-30% bg-black-1 rounded-xl flex flex-col justify-around items-center"
+					className="mb-2 lg:m-0 h-full xl:h-32 w-full md:w-45% lg:w-30% bg-black-1 rounded-xl flex flex-col justify-around items-center"
 					key={i.id}
 					data-aos="fade-down"
 					data-aos-duration="500"
 					data-aos-easing="ease-in-out"
+					data-aos-offset={i.data_aos_offset}
 					data-aos-delay={i.data_aos_delay}
 				>
 					<nav className="w-11/12 h-45% flex justify-around items-center">
@@ -83,7 +85,7 @@ const SCoins = () => {
 						<nav className="w-30% h-full flex flex-col justify-center items-center">
 							<nav>{i.Process}</nav>
 							<nav>
-								<p className={`${i.priceColor} font-bold`}>$ {i.price}</p>
+								<p className={`${i.priceColor} font-bold text-xs xl:text-base`}>$ {i.price}</p>
 							</nav>
 						</nav>
 					</nav>
@@ -98,13 +100,13 @@ const SCoins = () => {
 						<nav className="w-30% h-full flex flex-col justify-center items-center">
 							<nav>{i.Process2}</nav>
 							<nav>
-								<p className={`${i.priceColor2} font-bold`}>$ {i.price2}</p>
+								<p className={`${i.priceColor2} font-bold text-xs xl:text-base`}>$ {i.price2}</p>
 							</nav>
 						</nav>
 					</nav>
 				</nav>
-			))} */}
-		</nav>
+			))}
+		</>
 	);
 };
 
