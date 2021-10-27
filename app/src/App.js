@@ -1,6 +1,6 @@
 import "./App.css";
 import FebButton from "./Common/Components/FAB_Button/FabButton";
-import Main from "./Common/Components/Main/Main";
+import Main from "./RouteMain";
 import Header from "./Common/Layout/Header/Header";
 import Sidebar from "./Common/Layout/Sidebar/Sidebar";
 

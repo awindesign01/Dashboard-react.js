@@ -1,5 +1,5 @@
-import SCategory from "../../Components/SMainSidebar/SCategory";
-import SMenu from "../../Components/SMainSidebar/SMenu";
+import SCategory from "../../Components/SSidebar/SCategory";
+import SMenu from "../../Components/SSidebar/SMenu";
 
 const Sidebar = (props) => {
 	return (

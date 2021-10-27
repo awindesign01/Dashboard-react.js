@@ -1,6 +1,6 @@
-import SMain from "../Components/Main/SMain";
-import SSubsidiary from "../Components/Main/SSubsidiary";
-import SWatched from "../Components/Watched/SWatched";
+import SMain from "../Components/SHome/SMainHome";
+import SSubsidiary from "../Components/SHome/SSubsidiaryHome";
+import SWatched from "../Components/SHome/SWatched";
 
 const Descover = () => {
 	return (

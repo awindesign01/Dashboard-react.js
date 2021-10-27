@@ -1,4 +1,4 @@
-import Descover from "../Common/pages/Descover";
+import Home from "../Common/pages/Home";
 import Trending from "../Common/pages/Trending";
 import Streaming from "../Common/pages/Streaming";
 import Playlist from "../Common/pages/Playlist";
@@ -9,7 +9,7 @@ import Competition from "../Common/pages/Competition";
 import Community from "../Common/pages/Community";
 
 const routes = [
-	{ path: "/", component: Descover, exact: true },
+	{ path: "/", component: Home, exact: true },
 	{ path: "/trending", component: Trending },
 	{ path: "/streaming", component: Streaming },
 	{ path: "/playlist", component: Playlist },

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { HiOutlinePlus } from "react-icons/hi";
-import MenuPhone from "../Menu/MenuPhone";
+import MenuPhone from "../MenuPhone/MenuPhone";
 
 const FebButton = () => {
 	const [ShowMenu, setShowMenu] = useState(false);

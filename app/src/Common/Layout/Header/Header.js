@@ -1,5 +1,5 @@
-import SNotification from "../../Components/SMainHeader/SNotification";
-import SSearchHeader from "../../Components/SMainHeader/SSearchHeader";
+import SNotification from "../../Components/SHeader/SNotification";
+import SSearchHeader from "../../Components/SHeader/SSearchHeader";
 
 const Header = () => {
 	return (

@@ -1,7 +1,7 @@
-import MainTrending from "../Components/Trending/MainTrending";
-import SCharTrending from "../Components/Trending/SChartTrending";
-import SChartTrending from "../Components/Trending/SChartTrending2";
-import SCoins from "../Components/Trending/SCoins";
+import MainTrending from "../Components/STrending/SMainTrending";
+import SCharTrending from "../Components/STrending/SChartTrendingLeft";
+import SChartTrending from "../Components/STrending/SChartTrendingRight";
+import SCoins from "../Components/STrending/SCoins";
 
 const m = [
 	"January",
@@ -31,8 +31,8 @@ const Trending = () => {
 					</h1>
 				</header>
 				{/* data in page trending */}
-				<p className="ml-4 text-white text-xxs xl:text-xs tracking-wider">
 					<span className="mr-1 text-xl">»</span>
+				<p className="ml-4 text-white text-xxs xl:text-xs tracking-wider">
 					{m[new Date().getMonth()]} / {new Date().getDate()} / {new Date().getFullYear()}
 				</p>
 			</article>
