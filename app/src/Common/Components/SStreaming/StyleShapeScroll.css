@@ -7,6 +7,6 @@
 }
 ::-webkit-scrollbar-thumb{
    margin-right: 5px;
-   background-color: rgba(23,23,23,0.85);
+   background-color: #fff;
    border-radius: 100px;
 }

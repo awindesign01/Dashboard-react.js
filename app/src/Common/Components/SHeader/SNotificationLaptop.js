@@ -19,7 +19,7 @@ const SNotificationLaptop = () => {
          </button>
          <button className="w-1/5 xl:w-1/6 h-full flex justify-end items-center">
             <RiNotification4Fill className="text-2xl text-white text-opacity-40"/>
-            <nav className="h-2 w-2 bg-red-500 border-2 border-black-2 rounded-full relative right-2 bottom-2"></nav>
+            <nav className="h-2 w-2 bg-red-500 border-2 border-black-2 rounded-full relative right-2 bottom-2 animate-bounce"></nav>
          </button>
 		</nav>
 	);

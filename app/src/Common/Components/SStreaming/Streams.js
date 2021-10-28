@@ -3,7 +3,6 @@ import './StyleShapeScroll.css';
 
 const Streams = ({ itemsOverflow }) => {
 	return (
-		// responsive
 		<nav className="mb-2 lg:m-0 py-2 w-full md:w-45% lg:w-45% xl:w-1/3 h-52 lg:h-60 bg-yellow-300 rounded-2xl overflow-y-scroll">
 			{itemsOverflow.map((e) => (
 				<nav
