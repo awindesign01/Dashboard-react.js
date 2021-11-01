@@ -4,7 +4,7 @@ import ForLargeLaptopComponents from "./ForLargeLaptopComponents";
 import ForPhoneComponents from "./ForPhoneComponents";
 import ForTabletComponents from "./ForTabletComponents";
 
-const SPopularSreaming = () => {
+const 	SPopularSreaming = () => {
 	let forPhone = useMediaQuery({ query: "(max-width: 640px)" });
 	let forTablet = useMediaQuery({ query: "(min-width: 640px)" });
 	let forLaptop = useMediaQuery({ query: "(min-width: 1024px)" });

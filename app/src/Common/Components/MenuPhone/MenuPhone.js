@@ -6,14 +6,14 @@ import { IoIosDownload } from "react-icons/io";
 import { Link, NavLink, withRouter } from "react-router-dom";
 
 const NavMenu = [
-	{ icon: <AiFillHome />, text: "Home", to: "/", exact: false },
+	{ icon: <AiFillHome />, text: "Home", to: "/", exact: true },
 	{ icon: <FiTrendingUp />, text: "Trending", to: "/trending" },
 	{ icon: <IoIosDownload />, text: "Streaming", to: "/streaming" },
 	{ icon: <HiDocumentDownload />, text: "Playlist", to: "/playlist" },
 	{ icon: <BsBookmarkPlusFill />, text: "Bookmark", to: "/bookmark" },
 ];
 const NavMenu2 = [
-	{ icon: <AiFillHome />, text: "Live Stream", to: "./live-stream" },
+	{ icon: <AiFillHome />, text: "Live Stream", to: "/live-stream" },
 	{ icon: <FiTrendingUp />, text: "Tutorial", to: "/tutorial" },
 	{ icon: <IoIosDownload />, text: "Competition", to: "/competition" },
 	{ icon: <HiDocumentDownload />, text: "Community", to: "/community" },
@@ -32,7 +32,7 @@ const MenuPhone = () => {
 					<FiSearch className="w-6 text-xl text-white text-opacity-40" />
 				</nav>
 				<button className="p-1 w-30% md:w-1/5 lg:w-90% h-10 bg-black-1 border-2 border-yellow-400 border-opacity-60 flex justify-around items-center rounded-lg">
-					<FiStar className="text-yellow-400 text-xl"/>
+					<FiStar className="text-yellow-400 text-xl" />
 					<p className="text-white text-sm font-bold">Premium</p>
 				</button>
 			</nav>
@@ -66,8 +66,8 @@ const MenuPhone = () => {
 				))}
 				<hr className="w-1/2 h-2 border-white border-opacity-40" />
 				{NavMenu2.map((i) => (
-					<nav className="w-2/3">
-						<Link to={i.to} key={i.to}>
+					<nav className="w-2/3" key={i.to}>
+						<Link to={i.to}>
 							<nav className="my-5 w-full flex items-center group ">
 								<NavLink
 									to={i.to}

@@ -5,10 +5,10 @@ import { HiDocumentDownload } from "react-icons/hi";
 import { Link, NavLink } from "react-router-dom";
 
 const NavMenu = [
-	{ icon: <AiFillHome />, text: "Live Stream", to: "./live-stream" },
-	{ icon: <FiTrendingUp />, text: "Tutorial", to: "/tutorial" },
-	{ icon: <IoIosDownload />, text: "Competition", to: "/competition" },
-	{ icon: <HiDocumentDownload />, text: "Community", to: "/community" },
+	{ icon: <AiFillHome />, text: "Live Stream", to: "./live-stream", id: 1 },
+	{ icon: <FiTrendingUp />, text: "Tutorial", to: "/tutorial", id: 2 },
+	{ icon: <IoIosDownload />, text: "Competition", to: "/competition", id: 3 },
+	{ icon: <HiDocumentDownload />, text: "Community", to: "/community", id: 4 },
 ];
 
 const SCategory = () => {
@@ -19,8 +19,8 @@ const SCategory = () => {
 			</nav>
 			<nav className="mx-auto w-95%">
 				{NavMenu.map((i) => (
-					<nav className="w-full">
-						<Link to={i.to} key={i.to}>
+					<nav className="w-full" key={i.id}>
+						<Link to={i.to}>
 							<nav className="my-5 lg:my-2 xl:my-5 w-full flex items-center group ">
 								<NavLink
 									to={i.to}

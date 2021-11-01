@@ -32,7 +32,9 @@ module.exports = {
 				"15%": "15%",
 				"30%": "30%",
 				"45%": "45%",
+				"60%": "60%",
 				"90%": "90%",
+				"98%": "98%",
 			},
 			backgroundImage: {
 				"main-image-1": "url('/src/Assets/image/1.png')",

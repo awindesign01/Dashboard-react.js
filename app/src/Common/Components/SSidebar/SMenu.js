@@ -6,7 +6,7 @@ import { BsBookmarkPlusFill } from "react-icons/bs";
 import { NavLink, Link, withRouter } from "react-router-dom";
 
 const NavMenu = [
-	{ icon: <AiFillHome />, text: "Home", to: "/", exact: false },
+	{ icon: <AiFillHome />, text: "Home", to: "/", exact: true },
 	{ icon: <FiTrendingUp />, text: "Trending", to: "/trending" },
 	{ icon: <IoIosDownload />, text: "Streaming", to: "/streaming" },
 	{ icon: <HiDocumentDownload />, text: "Playlist", to: "/playlist" },

@@ -1,8 +1,6 @@
 import userImage1 from "../../../Assets/image/userImage/44.jpg";
-import AOS from "aos";
 
 const SMain = () => {
-	AOS.init();
 	return (
 		<nav
 			className="mb-4 md:m-0 h-52 lg:h-60 w-full md:w-60% bg-red-500 rounded-2xl bg-main-image-1 bg-contain bg-no-repeat bg-right"
