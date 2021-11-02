@@ -10,7 +10,7 @@ const NavMenu = [
 	{ icon: <FiTrendingUp />, text: "Trending", to: "/trending" },
 	{ icon: <IoIosDownload />, text: "Streaming", to: "/streaming" },
 	{ icon: <HiDocumentDownload />, text: "Playlist", to: "/playlist" },
-	{ icon: <BsBookmarkPlusFill />, text: "Bookmark", to: "/bookmark" },
+	{ icon: <BsBookmarkPlusFill />, text: "News", to: "/news" },
 ];
 
 const SMenu = () => {

@@ -1,5 +1,5 @@
-import SCategory from "../../Components/SSidebar/SCategory";
 import SMenu from "../../Components/SSidebar/SMenu";
+// import SCategory from "../../Components/SSidebar/SCategory";
 
 const Sidebar = () => {
 	return (
@@ -8,9 +8,9 @@ const Sidebar = () => {
 				<article className="hidden lg:block">
 					<SMenu />
 				</article>
-				<hr className="my-5 w-3/5 border-gray-700 " />
+				{/* <hr className="my-5 w-3/5 border-gray-700 " /> */}
 				<article className="hidden lg:block">
-					<SCategory />
+					{/* <SCategory /> */}
 				</article>
 			</article>
 		</section>

@@ -10,14 +10,14 @@ const NavMenu = [
 	{ icon: <FiTrendingUp />, text: "Trending", to: "/trending" },
 	{ icon: <IoIosDownload />, text: "Streaming", to: "/streaming" },
 	{ icon: <HiDocumentDownload />, text: "Playlist", to: "/playlist" },
-	{ icon: <BsBookmarkPlusFill />, text: "Bookmark", to: "/bookmark" },
+	{ icon: <BsBookmarkPlusFill />, text: "News", to: "/news" },
 ];
-const NavMenu2 = [
-	{ icon: <AiFillHome />, text: "Live Stream", to: "/live-stream" },
-	{ icon: <FiTrendingUp />, text: "Tutorial", to: "/tutorial" },
-	{ icon: <IoIosDownload />, text: "Competition", to: "/competition" },
-	{ icon: <HiDocumentDownload />, text: "Community", to: "/community" },
-];
+// const NavMenu2 = [
+// 	{ icon: <AiFillHome />, text: "Live Stream", to: "/live-stream" },
+// 	{ icon: <FiTrendingUp />, text: "Tutorial", to: "/tutorial" },
+// 	{ icon: <IoIosDownload />, text: "Competition", to: "/competition" },
+// 	{ icon: <HiDocumentDownload />, text: "Community", to: "/community" },
+// ];
 
 const MenuPhone = () => {
 	return (
@@ -64,7 +64,7 @@ const MenuPhone = () => {
 						</Link>
 					</nav>
 				))}
-				<hr className="w-1/2 h-2 border-white border-opacity-40" />
+				{/* <hr className="w-1/2 h-2 border-white border-opacity-40" />
 				{NavMenu2.map((i) => (
 					<nav className="w-2/3" key={i.to}>
 						<Link to={i.to}>
@@ -91,7 +91,7 @@ const MenuPhone = () => {
 							</nav>
 						</Link>
 					</nav>
-				))}
+				))} */}
 			</nav>
 		</nav>
 	);

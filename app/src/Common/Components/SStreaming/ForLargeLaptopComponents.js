@@ -13,6 +13,11 @@ const ForLargeLaptopComponents = () => {
 						height: "10rem",
 					}}
 					key={e.name}
+					data-aos="fade-down"
+					data-aos-duration="700"
+					data-aos-delay={e["data-aos-delay"]}
+					data-aos-offset={e["data-aos-offset"]}
+					data-aos-easing="ease-in-out"
 				>
 					<nav className="w-full h-2/3 bg-transparent"></nav>
 					<nav className="px-1 w-full h-1/3 bg-black-3 bg-opacity-70 rounded-bl-xl rounded-br-xl">

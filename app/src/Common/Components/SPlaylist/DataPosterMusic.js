@@ -10,6 +10,8 @@ export const DataPosterMusic = [
 	{ bg_image: image2, name: "Awin Design", musicName: "the himself", id: 2 },
 	{ bg_image: image3, name: "Awin Design", musicName: "the himself", id: 3 },
 	{ bg_image: image4, name: "Awin Design", musicName: "the himself", id: 4 },
-	// { bg_image: image5, name: "Awin Design", musicName: "the himself", id: 5 },
-	// { bg_image: image6, name: "Awin Design", musicName: "the himself", id: 6 },
+	{ bg_image: image5, name: "Awin Design", musicName: "the himself", id: 5 },
+	{ bg_image: image6, name: "Awin Design", musicName: "the himself", id: 6 },
+	{ bg_image: image5, name: "Awin Design", musicName: "the himself", id: 5 },
+	{ bg_image: image6, name: "Awin Design", musicName: "the himself", id: 6 },
 ];

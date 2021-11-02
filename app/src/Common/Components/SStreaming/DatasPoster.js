@@ -8,12 +8,12 @@ import Img7 from "../../../Assets/PosterImage/joker_full.jpg";
 import Img8 from "../../../Assets/PosterImage/movie-poster-template-design-21a1c803fe4ff4b858de24f5c91ec57f_screen.jpg";
 
 export const itemPosters = [
-	{ img: Img1, name: "Awin Design", data: "2000/0/23", followers: 200 },
-	{ img: Img2, name: "Awin Design", data: "2000/0/23", followers: 200 },
-	{ img: Img3, name: "Awin Design", data: "2000/0/23", followers: 200 },
-	{ img: Img4, name: "Awin Design", data: "2000/0/23", followers: 200 },
-	{ img: Img5, name: "Awin Design", data: "2000/0/23", followers: 200 },
-	{ img: Img6, name: "Awin Design", data: "2000/0/23", followers: 200 },
-	{ img: Img7, name: "Awin Design", data: "2000/0/23", followers: 200 },
-	{ img: Img8, name: "Awin Design", data: "2000/0/23", followers: 200 },
+	{ img: Img1, name: "Awin Design", data: "2000/0/23", followers: 200, "data-aos-delay": 0, "data-aos-offset": 500 },
+	{ img: Img2, name: "Awin Design", data: "2000/0/23", followers: 200, "data-aos-delay": 100, "data-aos-offset": 500 },
+	{ img: Img3, name: "Awin Design", data: "2000/0/23", followers: 200, "data-aos-delay": 200, "data-aos-offset": 500 },
+	{ img: Img4, name: "Awin Design", data: "2000/0/23", followers: 200, "data-aos-delay": 300, "data-aos-offset": 500 },
+	{ img: Img5, name: "Awin Design", data: "2000/0/23", followers: 200, "data-aos-delay": 400, "data-aos-offset": 500 },
+	{ img: Img6, name: "Awin Design", data: "2000/0/23", followers: 200, "data-aos-delay": 500, "data-aos-offset": 500 },
+	{ img: Img7, name: "Awin Design", data: "2000/0/23", followers: 200, "data-aos-delay": 600, "data-aos-offset": 500 },
+	{ img: Img8, name: "Awin Design", data: "2000/0/23", followers: 200, "data-aos-delay": 700, "data-aos-offset": 500 },
 ];

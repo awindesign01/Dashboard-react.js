@@ -2,6 +2,7 @@ import ImageUser1 from "../../../Assets/image/userImage/84.jpg";
 import ImageUser2 from "../../../Assets/image/userImage/70.jpg";
 import ImageUser3 from "../../../Assets/image/userImage/60.jpg";
 import React, { useState } from "react";
+import { FaArrowRight } from "react-icons/fa";
 
 const SFollowingPlaylist = () => {
 	const [isShow, setisShow] = useState(true);
@@ -104,10 +105,16 @@ const SFollowingPlaylist = () => {
 
 	return (
 		<>
-			<nav>
-				<h1 className="block md:hidden my-4 text-xl text-white font-bold tracking-wider">
-					Followers
-				</h1>
+			<nav className="flex justify-between">
+				<nav className="block md:hidden">
+					<h1 className=" my-4 text-xl text-white font-bold tracking-wider">Followers</h1>
+				</nav>
+				<nav className="blick md:hidden flex justify-around items-center">
+					<a href="#" className="text-white font-bold">
+						More
+					</a>
+					<FaArrowRight className="ml-1 text-white" />
+				</nav>
 			</nav>
 			<nav className="h-52 w-full md:w-1/3 bg-black-1 rounded-2xl overflow-y-scroll">
 				{following.map((e) => (

@@ -66,7 +66,7 @@ const SCoins = () => {
 		<>
 			{Item.map((i) => (
 				<nav
-					className="mb-2 lg:m-0 h-full xl:h-32 w-full md:w-45% lg:w-30% bg-black-1 rounded-xl flex flex-col justify-around items-center"
+					className="mb-2 lg:m-0 h-full md:h-28 xl:h-32 w-full md:w-45% lg:w-30% bg-black-1 rounded-xl flex flex-col justify-around items-center"
 					key={i.id}
 					data-aos="fade-down"
 					data-aos-duration="500"

@@ -46,7 +46,7 @@ const MainTrending = () => {
 		<>
 			{TrandingUser.map((c) => (
 				<nav
-					className="mb-2 w-full md:w-45% lg:w-30% xl:h-32 bg-black-1 rounded-xl flex justify-around items-center"
+					className="mb-2 w-full md:w-45% lg:w-30% md:h-28 xl:h-32 bg-black-1 rounded-xl flex justify-around items-center"
 					data-aos="fade-down"
 					data-aos-duration="500"
 					data-aos-easing="ease-in-out"
