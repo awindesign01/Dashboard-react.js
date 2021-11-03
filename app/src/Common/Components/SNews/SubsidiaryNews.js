@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { AiOutlineUser } from "react-icons/ai";
+import { FadingBalls } from "react-cssfx-loading";
 
 const SubsidiaryNews = () => {
 	const [GetApi, setGetApi] = useState(null);
@@ -8,7 +9,7 @@ const SubsidiaryNews = () => {
 	useEffect(() => {
 		axios
 			.get(
-				"https://newsapi.org/v2/everything?q=tesla&from=2021-10-02&sortBy=publishedAt&apiKey=e92fc57bc2844a83a490f1121bdf1158",
+				"https://newsapi.org/v2/everything?q=tesla&from=2021-10-03&sortBy=publishedAt&apiKey=e92fc57bc2844a83a490f1121bdf1158",
 			)
 			.then((res) => setGetApi(res.data.articles.slice(0, 6)))
 			.catch((err) => console.log(err));
@@ -28,14 +29,14 @@ const SubsidiaryNews = () => {
 						</nav>
 						<nav className="mx-auto w-11/12 h-1/5 flex items-center">
 							<nav className="w-10 h-90% border-dashed border-2 rounded-full">
-								<AiOutlineUser className="w-full h-full"/>
+								<AiOutlineUser className="w-full h-full" />
 							</nav>
 							<p className="ml-2">{i.source.name}</p>
 						</nav>
 					</nav>
 				))
 			) : (
-				<p>Loading...</p>
+				<FadingBalls color="#FFFFFF" width="10px" height="10px" duration="0.5s" />
 			)}
 		</nav>
 	);

@@ -44,7 +44,7 @@ const Playlist = () => {
 				</header>
 			</article>
 			<article
-				className="w-full h-52 xl:h-80 flex flex-wrap justify-between md:justify-around lg:justify-around lg:overflow-y-scroll"
+				className="lg:border-2 lg:border-yellow-1 rounded-2xl w-full h-52 xl:h-80 flex flex-wrap justify-between md:justify-around lg:justify-around lg:overflow-y-scroll"
 				// data-aos="fade-right"
 				// data-aos-duration="700"
 				// data-aos-easing="ease-in-out"

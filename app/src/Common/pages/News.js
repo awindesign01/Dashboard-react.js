@@ -34,7 +34,7 @@ const Bookmark = () => {
 					</nav>
 				</header>
 			</article>
-			<article className="w-full h-auto flex md:flex-row flex-wrap lg:flex-nowrap justify-around items-center">
+			<article className="lg:border-2 lg:border-yellow-1 rounded-2xl w-full h-auto flex md:flex-row flex-wrap lg:flex-nowrap justify-around items-center">
 				<SubsidiaryNews />
 			</article>
 		</section>

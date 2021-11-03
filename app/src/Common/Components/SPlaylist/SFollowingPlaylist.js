@@ -88,15 +88,10 @@ const SFollowingPlaylist = () => {
 
 	// const filterButton = (event) => {
 	// 	const filteredbutton = following.find((i) => i.buttonID === event);
-	// 	if (filteredbutton) {
+	// 	console.log(filteredbutton.buttonID);
+	// 	if (filteredbutton.buttonID !== event) {
 	// 		return (
-	// 			<button className="w-full h-60% bg-red-2 rounded-full font-bold tracking-wider">
-	// 				Follow
-	// 			</button>
-	// 		);
-	// 	} else {
-	// 		return (
-	// 			<button className="w-full h-60% bg-red-2 bg-opacity-50 rounded-full font-bold tracking-wider">
+	// 			<button className="w-full h-60% bg-red-2 rounded-full md:text-xs font-bold tracking-wider">
 	// 				Following
 	// 			</button>
 	// 		);
@@ -142,7 +137,7 @@ const SFollowingPlaylist = () => {
 							onClick={() => setisShow(!isShow)}
 							// onClick={() => filterButton(e.buttonID)}
 						>
-							{isShow ? (
+							{/* {isShow ? (
 								<button className="w-full h-60% bg-red-2 rounded-full md:text-xs font-bold tracking-wider">
 									Follow
 								</button>
@@ -150,7 +145,7 @@ const SFollowingPlaylist = () => {
 								<button className="w-full h-60% bg-red-2 bg-opacity-50 rounded-full md:text-xs font-bold tracking-wider">
 									Following
 								</button>
-							)}
+							)} */}
 						</nav>
 					</nav>
 				))}

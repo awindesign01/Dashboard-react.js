@@ -11,7 +11,7 @@ const Descover = () => {
 					<nav className="w-auto h-auto ">
 						<h1 className="text-xl xl:text-2xl text-white font-bold tracking-wider">Home</h1>
 					</nav>
-					<nav className="w-auto h-auto flex justify-around items-center">
+					<nav className="mr-1 w-auto h-auto flex justify-around items-center">
 						<a href="#" className="text-white font-bold">
 							More
 						</a>
