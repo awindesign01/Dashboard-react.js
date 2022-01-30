@@ -1,5 +1,5 @@
 # ProjectNo.5😁
-Use the news API for,<br/>
+Use the news API,<br/>
 axios for operations on API,👍<br/>
 tailwind css for UI site, react-icons for icons, react-cssfx-loading for loading animation, react-animated-slider for slider🤩<br/>
 recharts to use the chart on the site,<br/>
